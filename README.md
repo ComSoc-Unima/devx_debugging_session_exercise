@@ -19,12 +19,14 @@ The directories are organized by increasing difficulty:
     *   Focus: Complex call chains, nested logic, and scenarios requiring professional debugging tools (like breakpoints and variable watches).
     *   Structure: Robust scenarios with multiple bugs hidden across the codebase.
 
-## Folder Structure & Parity
+## Folder Structure & Naming
 
-Each exercise in the **Beginner** and **Intermediate** levels has been implemented in both languages to ensure parity:
+The exercises are implemented in Java and JavaScript. To maintain clarity, the following naming convention is used across all directories:
 
-*   **Java**: Named using word-based numbering (e.g., `ExerciseOneOne.java`).
+*   **Java**: Named using word-based numbering (e.g., `ExerciseOneOne.java`, `ExerciseThreeTwo.java`).
 *   **JavaScript**: Named using underscored numbering (e.g., `Exercise_1_1.js`).
+
+Parity exists between Java and JavaScript versions for the **Beginner** and **Intermediate** levels.
 
 ## How to Use
 

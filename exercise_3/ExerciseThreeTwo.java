@@ -11,30 +11,30 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inventory {
+public class ExerciseThreeTwo {
 
   static class Product {
     String name;
-    int    stock;
+    int stock;
     double unitPrice;
-    int    reorderThreshold;
+    int reorderThreshold;
 
     Product(String name, int stock, double price, int threshold) {
-      this.name             = name;
-      this.stock            = stock;
-      this.unitPrice        = unitPrice;   
+      this.name = name;
+      this.stock = stock;
+      this.unitPrice = unitPrice;
       this.reorderThreshold = threshold;
     }
   }
 
   public static boolean needsReorder(Product p) {
-    return p.stock > p.reorderThreshold;    
+    return p.stock > p.reorderThreshold;
   }
 
   public static double totalValue(List<Product> products) {
     double total = 0;
     for (Product p : products) {
-      total += p.stock + p.unitPrice;     
+      total += p.stock + p.unitPrice;
     }
     return total;
   }
