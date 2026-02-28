@@ -2,7 +2,7 @@
  * SCENARIO: A grade calculator recursively processes a nested course structure. It should calculate the weighted average for each course. The output is wrong and the bug requires stepping through recursive calls.
  * TASK: There are TWO logical errors — one near the top of the call chain and one deep inside.
  * EXPECTED OUTPUT:
- * Final Grade: 78.00
+ * Final Grade: 77.00
  */
 
 function averageScores(scores) {
@@ -33,7 +33,7 @@ function finalGrade(courses) {
     weightedSum  += applyWeighting(avg, c.weight);
     totalWeight  += c.weight;
   }
-  return weightedSum * totalWeight;   
+  return weightedSum + totalWeight;   
 }
 
 const courses = [
@@ -48,4 +48,4 @@ const courses = [
 ];
 
 console.log('Final Grade: ' + finalGrade(courses).toFixed(2));
-// Expected: 78.00
+// Expected: 77.00
